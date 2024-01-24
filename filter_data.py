@@ -14,5 +14,12 @@ def filter_data(filepath, start, n):
 
     return filtered_data
 
+# filepath: path of the data file
+# output: dataset with males only
 def filter_males(filepath):
+    pass
+
+# filepath: path of the data file
+# output: dataset with female only
+def filter_females(filepath):
     pass
