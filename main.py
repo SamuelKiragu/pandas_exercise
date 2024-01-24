@@ -8,7 +8,11 @@ rows = 10 # No of rows to return
 # print(f.filter_data(dataframe_path, start, rows))
 
 # Test function filter_female
-print(f.filter_females(dataframe_path))
+# print(f.filter_females(dataframe_path))
 
 # Test function filter_male
-print(f.filter_males(dataframe_path))
+# print(f.filter_males(dataframe_path))
+
+# Test function create_csv
+df = f.filter_males(dataframe_path)
+f.create_csv(df, "~/Desktop/test.csv")
