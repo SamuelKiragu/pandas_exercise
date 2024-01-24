@@ -32,5 +32,9 @@ def filter_females(filepath):
 # dataframe: the data frame to convert
 # desired_path: the desired path
 # output: csv file
-def create_csv(dataframe, desired_path, output):
-    pass
+def create_csv(dataframe, desired_path):
+    try:
+        dataframe.to_csv(desired_path)
+        return True
+    except:
+        return False
