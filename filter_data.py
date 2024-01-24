@@ -13,3 +13,6 @@ def filter_data(filepath, start, n):
         filtered_data.append(dict)
 
     return filtered_data
+
+def filter_males(filepath):
+    pass
