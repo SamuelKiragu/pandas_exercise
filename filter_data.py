@@ -28,3 +28,9 @@ def filter_females(filepath):
     df = pd.read_csv(filepath) # Read data frame
     filtered_data = df.groupby(by="Gender").get_group("Female")
     return filtered_data
+
+# dataframe: the data frame to convert
+# desired_path: the desired path
+# output: csv file
+def create_csv(dataframe, desired_path, output):
+    pass
