@@ -17,9 +17,14 @@ def filter_data(filepath, start, n):
 # filepath: path of the data file
 # output: dataset with males only
 def filter_males(filepath):
-    pass
+    filtered_data = []
+    df = pd.read_csv(filepath) # Read data frame
+    filtered_data = df.groupby(by="Gender").get_group("Male")
+    return filtered_data
 
 # filepath: path of the data file
 # output: dataset with female only
 def filter_females(filepath):
-    pass
+    df = pd.read_csv(filepath) # Read data frame
+    filtered_data = df.groupby(by="Gender").get_group("Female")
+    return filtered_data
